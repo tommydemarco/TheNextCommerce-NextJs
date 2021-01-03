@@ -1,0 +1,63 @@
+@import "../../scss/global.scss";
+
+.TheMenu {
+  background-color: darken($bp, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $w;
+
+  &__container {
+    width: 1200px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__links,
+  &__icons {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    display: block;
+    color: $w;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    transition: all 0.4s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 0px;
+      width: 100%;
+      background-color: $bp;
+      z-index: -1;
+      transition: height 0.4s ease-in-out;
+    }
+
+    &:hover {
+      color: darken($w, 5%);
+
+      &::after {
+        height: 100%;
+      }
+    }
+  }
+
+  &__icon {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../scss/global.scss";
+
+.TopBar {
+  background-color: $bp;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 1200px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-family: $headline;
+    font-size: 45px;
+    color: $cp;
+
+    &:hover {
+      color: $cs;
+    }
+  }
+
+  &__dropdown {
+    background-color: $w !important;
+  }
+}
