@@ -3,4 +3,13 @@
 .Layout {
   background-color: $bs;
   min-height: 100vh;
+  background: url("/bg.jpg");
+  background-size: contain;
+
+  &__content {
+    padding: 30px;
+    height: calc(100vh - 145px);
+    background-color: $bs;
+    overflow-y: scroll;
+  }
 }

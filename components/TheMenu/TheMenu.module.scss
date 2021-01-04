@@ -8,21 +8,29 @@
   color: $w;
 
   &__container {
-    width: 1200px;
+    width: 1125px;
     max-width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
   }
 
   &__links,
   &__icons {
+    align-self: stretch;
     list-style: none;
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
     margin: 0;
     padding: 0;
+  }
+
+  &__element {
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
   }
 
   &__link {
